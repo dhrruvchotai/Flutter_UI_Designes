@@ -23,14 +23,27 @@ class OnboardingReadyToGlowScreen extends StatelessWidget {
                 children: [
                   Text(
                     "Ready To",
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.dancingScript(
                       color: Colors.white,
-                      fontSize: 30,
+                      fontSize: 45,
                     ),
                   ),
                 ],
               ),
-              top: 300,
+              top: MediaQuery.of(context).size.height / 2.3,
+              left: MediaQuery.of(context).size.height / 6.8,
+            ),
+            Positioned(
+              child: Text(
+                "Glow?",
+                style: GoogleFonts.dancingScript(
+                  fontSize: 100,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              top: MediaQuery.of(context).size.height / 2.05,
+              left: MediaQuery.of(context).size.width / 5.5,
             ),
           ],
         ),
